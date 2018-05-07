@@ -6,7 +6,7 @@
 		<title>重庆海吉亚肿瘤医院</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<meta name="Keywords" content="重庆,重庆医院,肿瘤医院,重庆肿瘤医院,海吉亚,思贤路,三甲医院" />
-		<link rel="icon" type="image/x-icon" href="img/hjy.png" />
+		<link rel="icon" type="image/x-icon" href="img/logo.png" />
 		<link rel="stylesheet" type="text/css" href="css/Normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
@@ -21,6 +21,8 @@
 		<script src="js/divscroll.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.6&key=您申请的key值"></script>
+		<script src="js/headroom.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jQuery.headroom.js" type="text/javascript" charset="utf-8"></script>
 		<style type="text/css">
 			body {
 				position: relative;
@@ -32,44 +34,44 @@
 		<aside id="goTop">
 			<span class="glyphicon glyphicon-chevron-up" style="color: #309BBE;"></span>
 		</aside>
-		<nav class="navbar navbar-default navbar-fixed-top aos-init" aos="slide-down">
-			<div class="container-fluid" style="background-color: #fff;">
-				<div class="navbar-header">
-					<!--小屏幕样式按钮-->
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		<header id="header">
+			<nav class="navbar navbar-default navbar-fixed-top aos-init" aos="slide-down">
+				<div class="container-fluid" style="background-color: #fff;">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 				        <span class="sr-only">Toggle navigation</span>
 				        <span class="icon-bar"></span>
 				        <span class="icon-bar"></span>
 				        <span class="icon-bar"></span>
 				    </button>
-					<a class="navbar-brand font-color" href="#" style="margin-left: 10px;padding: 10px 15px;">
-						<img alt="logo" src="img/logo.png" height="34px" width="34px" style="display: inline-block;">
-						&nbsp;重庆海吉亚肿瘤医院
-					</a>
-				</div>
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<div id="navbar-example">
-						<ul class="nav navbar-nav text-center users-nav-title" role="tablist">
+						<a class="navbar-brand font-color" href="#" style="margin-left: 10px;padding: 10px 15px;">
+							<img alt="logo" src="img/logo.png" height="34px" width="34px" style="display: inline-block;"> &nbsp;重庆海吉亚肿瘤医院
+						</a>
+					</div>
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<div id="navbar-example">
+							<ul class="nav navbar-nav text-center users-nav-title" role="tablist">
+								<li>
+									<a href="#titlezero" class="cursor-pointer" id="zero">医院简介</a>
+								</li>
+								<li>
+									<a href="#titleone" class="cursor-pointer" id="one">TITLE ONE</a>
+								</li>
+								<li>
+									<a href="#titletwo" class="cursor-pointer" id="two">专家团队</a>
+								</li>
+							</ul>
+						</div>
+						<ul class="nav navbar-nav navbar-right text-center" style="margin-right: 10px;">
 							<li>
-								<a href="#titlezero" class="cursor-pointer" id="zero">医院简介</a>
-							</li>
-							<li>
-								<a href="#titleone" class="cursor-pointer" id="one">TITLE ONE</a>
-							</li>
-							<li>
-								<a href="#titletwo" class="cursor-pointer" id="two">专家团队</a>
+								<p class="navbar-text font-color"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> : 000-0000-0000</p>
+								<p class="navbar-text font-color"><span class="glyphicon glyphicon glyphicon-envelope" aria-hidden="true"></span> : xxx@xx.xx</p>
 							</li>
 						</ul>
 					</div>
-					<ul class="nav navbar-nav navbar-right text-center" style="margin-right: 10px;">
-						<li>
-							<p class="navbar-text font-color"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> : 000-0000-0000</p>
-							<p class="navbar-text font-color"><span class="glyphicon glyphicon glyphicon-envelope" aria-hidden="true"></span> : xxx@xx.xx</p>
-						</li>
-					</ul>
 				</div>
-			</div>
-		</nav>
+			</nav>
+		</header>
 		<div class="alert alert-info fade in top-message" role="alert">
 			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
 				<span aria-hidden="true">&times;</span>
@@ -77,22 +79,12 @@
 			<span>欢迎进入</span>
 		</div>
 		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="margin-top: 50px;">
-			<!-- Indicators -->
 			<ol class="carousel-indicators">
 				<li data-target="#carousel-example-generic" data-toggle="tooltip" title="banner1" data-slide-to="0" class="active"></li>
 				<li data-target="#carousel-example-generic" data-toggle="tooltip" title="banner2" data-slide-to="1"></li>
 			</ol>
-			<!-- Wrapper for slides -->
 			<div class="carousel-inner" role="listbox">
 				<div class="item active">
-					<div class="banner-content banner-content-img01">
-					</div>
-					<div class="carousel-caption">
-						<h3>Viral Treatments</h3>
-						<p>Lorem Ipsum is simply dummy text of the typesetting industry</p>
-					</div>
-				</div>
-				<div class="item">
 					<div class="banner-content banner-content-img02">
 					</div>
 					<div class="carousel-caption">
@@ -100,25 +92,38 @@
 						<p>Lorem Ipsum is simply dummy text of the typesetting industry</p>
 					</div>
 				</div>
+				<div class="item">
+					<div class="banner-content banner-content-img01">
+					</div>
+					<div class="carousel-caption">
+						<h3>Viral Treatments</h3>
+						<p>Lorem Ipsum is simply dummy text of the typesetting industry</p>
+					</div>
+				</div>
 			</div>
-			<!-- Controls -->
 			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
 				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 				<span class="sr-only">Previous</span>
 			</a>
-			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			<a class="right carousel-control users-anime-left" href="#carousel-example-generic" role="button" data-slide="next">
 				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 				<span class="sr-only">Next</span>
 			</a>
 		</div>
-		<div class="container" id="titlezero">
-			<div class="aos-init sort-image01" aos="fade-up">
-				<h2 >医院简介</h2>
-				<div class="users-line"></div>
-				<div class="jianjie-bg">
-					<p id="jianjie"></p>
+		<!--<div class="swiper-container2" style="margin-top: 50px;">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="banner-content banner-content-img01"></div>
+				</div>
+				<div class="swiper-slide">
+					<div class="banner-content banner-content-img02"></div>
 				</div>
 			</div>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-pagination2"></div>
+		</div>-->
+		<div class="container">
 			<div class="row jumbotron" style="margin-top: 50px;">
 				<div class="col-xs-12 col-md-4 aos-init" aos="fade-up">
 					<div class="test1" style="width: 100%;position: relative;">
@@ -155,7 +160,6 @@
 						</li>
 					</ul>
 				</div>
-				<!-- Modal -->
 				<div class="modal fade" id="newsContent1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 					<div class="modal-dialog" role="document">
 						<div class="modal-content">
@@ -228,6 +232,13 @@
 					<h3>title</h3>
 					<p style="font-size: 14px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni vel eum veniam nostrum vero ullam qui laudantium cupiditate culpa commodi. Quis!
 					</p>
+				</div>
+			</div>
+			<div id="titlezero" class="aos-init sort-image01" aos="fade-up">
+				<h2>医院简介</h2>
+				<div class="users-line"></div>
+				<div class="jianjie-bg">
+					<p id="jianjie"></p>
 				</div>
 			</div>
 			<div class="style-label" aos="fade-up">
@@ -315,15 +326,39 @@
 					</div>
 				</div>
 				<div class="col-xs-6 col-md-3" style="margin: 20px 0;">
-					<div class="test2" aos="fade-up" aos-delay="100">
+					<div class="box" aos="fade-up" aos-delay="300">
+						<img src="img/1.jpg" height="260">
+						<div class="box-content">
+							<h3 class="title">title</h3>
+							<span class="post"></span>
+							<p class="social">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga illum dolore nostrum nulla aperiam. Doloremque in impedit ipsum excepturi accusantium ut dolores eligendi id eum tenetur tempore iure et doloribus.
+							</p>
+						</div>
 					</div>
 				</div>
 				<div class="col-xs-6 col-md-3" style="margin: 20px 0;">
-					<div class="test2" aos="fade-up" aos-delay="100">
+					<div class="box" aos="fade-up" aos-delay="300">
+						<img src="img/1.jpg" height="260">
+						<div class="box-content">
+							<h3 class="title">title</h3>
+							<span class="post"></span>
+							<p class="social">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga illum dolore nostrum nulla aperiam. Doloremque in impedit ipsum excepturi accusantium ut dolores eligendi id eum tenetur tempore iure et doloribus.
+							</p>
+						</div>
 					</div>
 				</div>
 				<div class="col-xs-6 col-md-3" style="margin: 20px 0;">
-					<div class="test2" aos="fade-up" aos-delay="0">
+					<div class="box" aos="fade-up" aos-delay="300">
+						<img src="img/1.jpg" height="260">
+						<div class="box-content">
+							<h3 class="title">title</h3>
+							<span class="post"></span>
+							<p class="social">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga illum dolore nostrum nulla aperiam. Doloremque in impedit ipsum excepturi accusantium ut dolores eligendi id eum tenetur tempore iure et doloribus.
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -331,109 +366,92 @@
 				<h2 class="text-center aos-init" aos="fade-down">专家团队</h2>
 			</div>
 			<div class="row">
-				<div class="col-sm-6 col-md-3">
-					<div class="thumbnail" titletwo aos="zoom-out" aos-delay="100" style="text-align: center;padding: 0;">
+				<div class="col-sm-3 col-md-3">
+					<div class="thumbnail photo-padding" titletwo aos="zoom-out" aos-delay="100" style="text-align: center;padding: 0;">
 						<div class="doctor-photo">
 							<img style="width: 100%;" src="img/doctor/wenjianhu.jpg" />
 						</div>
 						<div class="caption">
-							<h3>温剑虎</h3>
-							<p>党支部书记</p>
+							<h4>温剑虎</h4>
+							<!--<p>党支部书记</p>
 							<p style="text-align: left;padding: 0 10px;text-indent: 28px;">
 								胸外科主任、医务科科长 主任医师、教授、硕士生导师 原重庆医科大学附属第一医院胸心外科专家 新几内亚太平洋国际医院胸心外科主任
-							</p>
+							</p>-->
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-3">
-					<div class="thumbnail" aos="zoom-out" aos-delay="200" style="text-align: center;">
-						<div class="test3" >
+				<div class="col-sm-3 col-md-3">
+					<div class="thumbnail photo-padding" aos="zoom-out" aos-delay="100" style="text-align: center;">
+						<div class="doctor-photo">
+							<img style="width: 100%;" src="img/doctor/xuxiaowei.jpg" />
 						</div>
 						<div class="caption">
-							<h3>Thumbnail label</h3>
-							<p>简介</p>
-							<p>
-							</p>
+							<h4>1</h4>
 						</div>
 					</div>
 				</div>
-
-				<div class="col-sm-6 col-md-3">
-					<div class="thumbnail" aos="zoom-out" aos-delay="300" style="text-align: center;">
-						<div class="test3" >
+				<div class="col-sm-3 col-md-3">
+					<div class="thumbnail photo-padding" aos="zoom-out" aos-delay="100" style="text-align: center;">
+						<div class="doctor-photo">
+							<img style="width: 100%;" src="img/doctor/xuxiaowei.jpg" />
 						</div>
 						<div class="caption">
-							<h3>Thumbnail label</h3>
-							<p>简介</p>
-							<p>
-							</p>
+							<h4>1</h4>
 						</div>
 					</div>
 				</div>
-
-				<div class="col-sm-6 col-md-3">
-					<div class="thumbnail" aos="zoom-out" aos-delay="400" style="text-align: center;">
-						<div class="test3" >
+				<div class="col-sm-3 col-md-3">
+					<div class="thumbnail photo-padding" aos="zoom-out" aos-delay="100" style="text-align: center;">
+						<div class="doctor-photo">
+							<img style="width: 100%;" src="img/doctor/xuxiaowei.jpg" />
 						</div>
 						<div class="caption">
-							<h3>Thumbnail label</h3>
-							<p>简介</p>
-							<p>
-							</p>
+							<h4>1</h4>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-sm-6 col-md-3">
-					<div class="thumbnail" titletwo aos="zoom-out" aos-delay="100" style="text-align: center;padding: 0;">
+				<div class="col-sm-3 col-md-3">
+					<div class="thumbnail photo-padding" titletwo aos="zoom-out" aos-delay="100" style="text-align: center;padding: 0;">
 						<div class="doctor-photo">
 							<img style="width: 100%;" src="img/doctor/xuxiaowei.jpg" />
 						</div>
 						<div class="caption">
-							<h3>徐晓薇</h3>
-							<p>放疗科主任医师</p>
-							<p style="text-align: left;padding: 0 10px;text-indent: 28px;">
+							<h4>徐晓薇</h4>
+							<!--<p style="text-align: left;padding: 0 10px;text-indent: 28px;">
 								重庆市沙坪坝区政协第九、十、十一届政协委员 重庆市放射肿瘤学学会委员 重庆市癌症康复与姑息治疗专委会委员 重庆市高级心理咨询师
-							</p>
+							</p>-->
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-3">
-					<div class="thumbnail" aos="zoom-out" aos-delay="200" style="text-align: center;">
-						<div class="test3" >
+				<div class="col-sm-3 col-md-3">
+					<div class="thumbnail photo-padding" aos="zoom-out" aos-delay="100" style="text-align: center;">
+						<div class="doctor-photo">
+							<img style="width: 100%;" src="img/doctor/xuxiaowei.jpg" />
 						</div>
 						<div class="caption">
-							<h3>Thumbnail label</h3>
-							<p>简介</p>
-							<p>
-							</p>
+							<h3>1</h3>
 						</div>
 					</div>
 				</div>
-
-				<div class="col-sm-6 col-md-3">
-					<div class="thumbnail" aos="zoom-out" aos-delay="300" style="text-align: center;">
-						<div class="test3" >
+				<div class="col-sm-3 col-md-3">
+					<div class="thumbnail photo-padding" aos="zoom-out" aos-delay="100" style="text-align: center;">
+						<div class="doctor-photo">
+							<img style="width: 100%;" src="img/doctor/xuxiaowei.jpg" />
 						</div>
 						<div class="caption">
-							<h3>Thumbnail label</h3>
-							<p>简介</p>
-							<p>
-							</p>
+							<h3>1</h3>
 						</div>
 					</div>
 				</div>
-
-				<div class="col-sm-6 col-md-3">
-					<div class="thumbnail" aos="zoom-out" aos-delay="400" style="text-align: center;">
-						<div class="test3" >
+				<div class="col-sm-3 col-md-3">
+					<div class="thumbnail photo-padding" aos="zoom-out" aos-delay="100" style="text-align: center;">
+						<div class="doctor-photo">
+							<img style="width: 100%;" src="img/doctor/xuxiaowei.jpg" />
 						</div>
 						<div class="caption">
-							<h3>Thumbnail label</h3>
-							<p>简介</p>
-							<p>
-							</p>
+							<h3>1</h3>
 						</div>
 					</div>
 				</div>
@@ -563,7 +581,7 @@
 					</div>
 					<div class="coopyright">
 						<div class="bq">
-							<div class="share" >
+							<div class="share">
 								<span>关注我们</span>
 								<a href="javascript:;" class="wechat">
 									<div>
@@ -583,6 +601,13 @@
 				<a href="http://www.miitbeian.gov.cn" target="_blank">琼ICP备XXXXX号-X</a>
 			</div>
 		</footer>
+		<!--<div class="users-dialog-bg">
+			<div class="users-dialog">
+				<div class="users-dialog-doctor">
+					<img src="img/doctor/xuxiaowei.jpg"/>
+				</div>
+			</div>
+		</div>-->
 	</body>
 	<script>
 		AOS.init({
@@ -606,7 +631,21 @@
 				loop: true,
 				speed: 500
 			});
+			var mySwiper2 = new Swiper('.swiper-container2', {
+				autoplay: true, //可选选项，自动滑动
+				pagination: {
+					el: '.swiper-pagination2',
+					clickable: true
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+				loop: true,
+				speed: 500
+			})
 			$("[data-toggle='tooltip']").tooltip();
+			$("#header").headroom();
 		})
 	</script>
 	<script type="text/javascript">

@@ -19,8 +19,7 @@
 .bq p a{padding: 0;}
 .footer .share{margin-top: 22px;position: relative;left: -5vw;}
 .footer .share span{display: inline-block;}
-.footer .share a{position: relative; margin-left: 5px; display: inline-block;width: 52px;height: auto; vertical-align: middle;background: url(../images/wechat.png) no-repeat center center;}
-/*.footer .share a.wechat:hover{background-image: url(../images/wechat2.png);}*/
+.footer .share a{position: relative; margin-left: 5px; display: inline-block;width: 60px;height: auto; vertical-align: middle;background: url(../img/wechat.png) no-repeat;background-size: 20px;background-position: 0 center;}
 .footer .share a>img{display: none;}
 .footer .share a .qr{position: absolute;left: 50%;padding: 5px;background-color: #fff; margin-left: -65px; bottom: 0px; width:150px;height: 150px;display: none;opacity: 0;box-sizing: border-box;background: url(../img/QRcode.jpg);background-position: center center;background-size: 100%;}
 .footer .share a .qr:after{content: "";position: absolute;bottom: -20px;left: 50%;margin-left: -10px;border: 10px solid;border-color: #fff transparent transparent transparent;}
