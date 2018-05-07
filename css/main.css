@@ -334,10 +334,10 @@ li {
 	justify-content: center;
 	align-items: center;
 }
-
 .doctor-photo>img {
 	transition: all .3s linear;
 	box-shadow: 0 0 8px -1px black;
+	width: 100%;
 }
 
 .doctor-photo>img:hover {
@@ -512,45 +512,76 @@ ul.box-shadow {
 	cursor: pointer;
 }
 
-.users-anime-left{
+.users-anime-left {
 	animation: left;
 }
-@keyframes left{
-	0%{
+
+@keyframes left {
+	0% {
 		transform: translateX(0px);
 	}
-	100%{
-		transform: translateX(10px);
-	}
-}
-@keyframes right{
-	0%{
-		transform: translateX(0px);
-	}
-	100%{
+	100% {
 		transform: translateX(10px);
 	}
 }
 
-.users-dialog-bg{
+@keyframes right {
+	0% {
+		transform: translateX(0px);
+	}
+	100% {
+		transform: translateX(10px);
+	}
+}
+
+.users-dialog-bg {
+	display: none;
 	position: fixed;
 	top: 0;
 	left: 0;
 	height: 100%;
 	width: 100%;
-	display: flex;
 	justify-content: center;
-	align-items: center;
-	background-color: rgba(0,0,0,0.7);
+	background-color: rgba(0, 0, 0, 0.7);
 	z-index: 101;
 	overflow: hidden;
 }
-.users-dialog{
-	height: 80vh;
-	width: 80vw;
+
+.users-dialog {
+	height: auto;
+	width: auto;
+	max-width: 370px;
+	padding:0 5vw;
 	background-color: #eee;
 	position: relative;
+	margin: 5vh 0;
+	border-radius: 5px;
 }
-.users-dialog-doctor>img{
+
+.users-dialog-close {
+	display: inline-block;
+	position: absolute;
+	right: -5px;
+	top: -5px;
+	cursor: pointer;
+	padding: 5px;
+	border-radius: 50%;
+	background-color: #fff;
+	color: #999
+}
+.users-dialog-close:hover{
+	color: #333;
+}
+.users-dialog-doctor{
+	text-align: center;
+}
+.users-dialog-doctor>img {
 	align-items: center;
+	height: 360px;
+	border-radius: 50%;
+	margin-top: 2vh;
+	box-shadow: 0px 5px 25px -3px #000;
+}
+.users-dialog-doctor>p{
+	padding: 0 15px;
 }

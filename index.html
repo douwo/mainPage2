@@ -368,8 +368,8 @@
 			<div class="row">
 				<div class="col-sm-3 col-md-3">
 					<div class="thumbnail photo-padding" titletwo aos="zoom-out" aos-delay="100" style="text-align: center;padding: 0;">
-						<div class="doctor-photo">
-							<img style="width: 100%;" src="img/doctor/wenjianhu.jpg" />
+						<div class="doctor-photo" onclick="show(1)">
+							<img style="" src="img/doctor/1.jpg" />
 						</div>
 						<div class="caption">
 							<h4>温剑虎</h4>
@@ -383,7 +383,7 @@
 				<div class="col-sm-3 col-md-3">
 					<div class="thumbnail photo-padding" aos="zoom-out" aos-delay="100" style="text-align: center;">
 						<div class="doctor-photo">
-							<img style="width: 100%;" src="img/doctor/xuxiaowei.jpg" />
+							<img style="width: 100%;" src="img/doctor/1.jpg" />
 						</div>
 						<div class="caption">
 							<h4>1</h4>
@@ -393,7 +393,7 @@
 				<div class="col-sm-3 col-md-3">
 					<div class="thumbnail photo-padding" aos="zoom-out" aos-delay="100" style="text-align: center;">
 						<div class="doctor-photo">
-							<img style="width: 100%;" src="img/doctor/xuxiaowei.jpg" />
+							<img style="width: 100%;" src="img/doctor/1.jpg" />
 						</div>
 						<div class="caption">
 							<h4>1</h4>
@@ -403,7 +403,7 @@
 				<div class="col-sm-3 col-md-3">
 					<div class="thumbnail photo-padding" aos="zoom-out" aos-delay="100" style="text-align: center;">
 						<div class="doctor-photo">
-							<img style="width: 100%;" src="img/doctor/xuxiaowei.jpg" />
+							<img style="width: 100%;" src="img/doctor/1.jpg" />
 						</div>
 						<div class="caption">
 							<h4>1</h4>
@@ -414,8 +414,8 @@
 			<div class="row">
 				<div class="col-sm-3 col-md-3">
 					<div class="thumbnail photo-padding" titletwo aos="zoom-out" aos-delay="100" style="text-align: center;padding: 0;">
-						<div class="doctor-photo">
-							<img style="width: 100%;" src="img/doctor/xuxiaowei.jpg" />
+						<div class="doctor-photo" onclick="show(2)">
+							<img style="width: 100%;" src="img/doctor/2.jpg" />
 						</div>
 						<div class="caption">
 							<h4>徐晓薇</h4>
@@ -428,7 +428,7 @@
 				<div class="col-sm-3 col-md-3">
 					<div class="thumbnail photo-padding" aos="zoom-out" aos-delay="100" style="text-align: center;">
 						<div class="doctor-photo">
-							<img style="width: 100%;" src="img/doctor/xuxiaowei.jpg" />
+							<img style="width: 100%;" src="img/doctor/2.jpg" />
 						</div>
 						<div class="caption">
 							<h3>1</h3>
@@ -438,7 +438,7 @@
 				<div class="col-sm-3 col-md-3">
 					<div class="thumbnail photo-padding" aos="zoom-out" aos-delay="100" style="text-align: center;">
 						<div class="doctor-photo">
-							<img style="width: 100%;" src="img/doctor/xuxiaowei.jpg" />
+							<img style="width: 100%;" src="img/doctor/2.jpg" />
 						</div>
 						<div class="caption">
 							<h3>1</h3>
@@ -448,7 +448,7 @@
 				<div class="col-sm-3 col-md-3">
 					<div class="thumbnail photo-padding" aos="zoom-out" aos-delay="100" style="text-align: center;">
 						<div class="doctor-photo">
-							<img style="width: 100%;" src="img/doctor/xuxiaowei.jpg" />
+							<img style="width: 100%;" src="img/doctor/2.jpg" />
 						</div>
 						<div class="caption">
 							<h3>1</h3>
@@ -601,13 +601,16 @@
 				<a href="http://www.miitbeian.gov.cn" target="_blank">琼ICP备XXXXX号-X</a>
 			</div>
 		</footer>
-		<!--<div class="users-dialog-bg">
+		<div class="users-dialog-bg">
 			<div class="users-dialog">
+				<span class="users-dialog-close glyphicon glyphicon-remove"></span>
 				<div class="users-dialog-doctor">
-					<img src="img/doctor/xuxiaowei.jpg"/>
+					<img id="doctor_photo" src="img/doctor/xuxiaowei.jpg" />
+					<h3 id="doctor_name">doctor name</h3>
+					<p id="doctor_content">胸外科主任、医务科科长 主任医师、教授、硕士生导师 原重庆医科大学附属第一医院胸心外科专家 新几内亚太平洋国际医院胸心外科主任</p>
 				</div>
 			</div>
-		</div>-->
+		</div>
 	</body>
 	<script>
 		AOS.init({
